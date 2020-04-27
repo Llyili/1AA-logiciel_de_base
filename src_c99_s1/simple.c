@@ -30,7 +30,8 @@ int main(void)
     // n'oublions pas l'octet pour stocker le '\0' final
     char *chaine2 = malloc(strlen(chaine1) + 1 + 1);
     // on concatene le caractere 'd' a la fin de la chaine
-    chaine2 = chaine1 + 'd';
+    strcpy(chaine2,chaine1);
+    strcat(chaine2,"d");
     printf("%s + 'd' = %s\n", chaine1, chaine2);
     free(chaine2);
 
