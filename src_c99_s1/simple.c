@@ -5,7 +5,7 @@
 
 #define X 5
 
-#define PLUS(a, b) a + b
+#define PLUS(a, b) (a + b)
 
 int main(void)
 {
